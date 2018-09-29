@@ -1,0 +1,12 @@
+service unlisted
+{
+        disable         = no
+        type            = UNLISTED
+        port            = 50506
+        socket_type     = stream
+        protocol        = tcp
+        user            = root
+        wait            = no
+        instances       = 10
+        server          = /opt/myscript.sh
+}
